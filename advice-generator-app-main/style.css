@@ -16,8 +16,8 @@
 }
 
 .card {
-  width: 28vw;
-  height: 35vh;
+  width: 32vw;
+  height: 38vh;
   background: hsl(217, 19%, 24%);
   color: white;
   display: flex;
@@ -46,6 +46,16 @@
   letter-spacing: 5px;
 }
 
+.quote{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 .divider {
   background: url("images/pattern-divider-desktop.svg") no-repeat center;
   background-size: cover;
@@ -54,14 +64,13 @@
 }
 
 @media screen and (max-width: 480px) {
-    .adviceNum{
-        font-size: 0.6rem;
-    }
+  .adviceNum {
+    font-size: 0.6rem;
+  }
   .divider {
     background: url("images/pattern-divider-mobile.svg") no-repeat center;
     height: 20px;
     width: 80%;
-
   }
 
   .card {
@@ -74,30 +83,30 @@
     font-weight: 800;
   }
 
-  .changeIcon{
-      width: 40px;
-      height: 40px;
+  .changeIcon {
+    width: 40px;
+    height: 40px;
   }
 }
 
-.changeIcon{
-    cursor: pointer;
-    /* center this element in its parent element using position property */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* translate the element to the middle of its parent element */
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
+.changeIcon {
+  /* center this element in its parent element using position property */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* translate the element to the middle of its parent element */
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
 }
 
-.change{
-    position: relative;
-    bottom: -10px;
-    left: 0;
-    transform: translateY(50%);
-    padding: 25px;
-    background: hsl(150, 100%, 66%);
-    border-radius: 50%;
+.change {
+  position: relative;
+  bottom: -10px;
+  left: 0;
+  transform: translateY(50%);
+  padding: 25px;
+  background: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  cursor: pointer;
 }
